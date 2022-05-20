@@ -7,9 +7,9 @@ import os.path
 from os import path
 import shutil
 import pandas as pd
-import pickle
+#import pickle
 import json
-import glob
+#import glob
 
 choices = [
     {
@@ -90,7 +90,19 @@ def add(arguement, df):
         #print(df)
     
     if len(arguement)==1:
-        df = df.append({'index': numeric}, ignore_index=True)
+        #print(arguement[0])
+        #print(arguement[0][-3:])
+        if arguement[0][-3:] == 'txt':
+            print('recognized text file')
+            with open(arguement[0]) as text:
+                #print(arguement[0])
+                for line in text:
+                    #print(line)
+                    df=pd.read_pickle('index')
+                    
+                    add(line,df)
+        else:
+            df = df.append({'index': numeric}, ignore_index=True)
         #print(df)
 
 
