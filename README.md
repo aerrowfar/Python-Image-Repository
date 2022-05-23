@@ -32,7 +32,7 @@ Any combination of tags or text query can be used. The matching will be based on
 
 Acceptable format for query:
     
-    213 23 23 
+    213 23 3 
     
 Retrieval is based on indexed number for images found through search. One or many numbers can be specified. Relevant images will be copied to 'Output' folder in local directory.
 Originals will be kept in repository. 
