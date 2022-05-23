@@ -1,4 +1,3 @@
-#interactive shell that asks for functions: add, search
 from ast import arguments
 from asyncore import file_dispatcher
 from lib2to3.pytree import Base
